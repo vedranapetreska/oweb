@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тенис клуб Прилеп</title>
+</head>
+<body>
+    <form method = "post" action="https://www.instagram.com/tkprilep/">
+        <table border ="1" align="center" width ="300" height = "100">
+            <caption>Внесете ги потребните информации и ќе ви ги пондуиме слободните термини</caption>
+            <tr>
+                <thead>
+                    <th colspan = "2">Тенис клуб Прилеп</th>
+                </thead>
+            </tr>
+            <tr>
+                <td>Име</td>
+                <td>
+                    <input type = "text" size = "25">    
+                </td> 
+            </tr>
+            <tr>
+                <td>Времетраење</td>
+                <td>
+                    <input type = "radio" name="cas" value = 1час>1 час<br>
+                    <input type = "radio" name="cas" value = 1:30час>1:30 час<br>
+                    <input type = "radio" name="cas" value = 2часа>2 часа<br>    
+                </td>   
+            </tr>
+            <tr>
+                <td>Играчи</td>
+                    <td>
+                        <select name="">
+                            <option value = "single">Single(2 играчи)</option>
+                            <option value = "double">Double(4 играчи)</option>
+                        </select> 
+                    </td>
+            </tr>
+            <tr>
+                <td>Опрема</td>
+                <td>
+                    <input type = "checkbox" name = "">Топчиња 
+                    <input type = "checkbox" name = "">Рекети   
+                </td>
+            </tr>  
+            <tr>
+                <td colspan = "2">
+                    Дополнителни барања: <br>
+                    <textarea name = "" rows = "4" cols="50">
+                    </textarea>    
+                </td>  
+            </tr>
+            <tr> 
+                <td colspan="2">
+                    <input type ="submit" onclick="alert('Успешно')" value = "Испрати">  
+                </td>           
+            </tr> 
+        </table>      
+    </form>
+
+</body>
+</html>
