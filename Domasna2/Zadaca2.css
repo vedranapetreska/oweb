@@ -1,0 +1,74 @@
+body { 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-image: url(tennis.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+caption { 
+    font-weight: bold;
+    padding: 10px; 
+    background-color: ddd;
+    color: green;
+    position: relative;
+    top: -3ex;
+    font-size: large;
+ }
+
+table { 
+    font-size: medium; 
+    color:green;
+    background-color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    border-color: rgb(250, 248, 247);
+    border-width: 3px;
+    border-style: solid;
+    width: 35%;
+        
+ }
+
+ th {
+    color: green;
+    font-size: large;
+    border-color: #333;
+ }
+
+ input[type="text"], textarea, select {
+    padding: 1%;
+    margin: 2%;
+    box-sizing: border-box;
+    border-radius: 1px solid #ccc;
+    background-color:rgb(240, 238, 235);
+    font-size: small;
+    width: 80%;
+ }
+
+ input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+ }
+
+ tr {
+    border: none;
+    font-weight: bold;
+    border-color: rgb(238, 233, 226);
+    
+ }
+
+ td {
+    text-align: left;
+    font-size: medium;
+    border-color: rgb(237, 233, 228);
+ }
+
+input[type=submit]:hover{
+    text-decoration: underline;
+    background-color: #555;
+
+}
+
