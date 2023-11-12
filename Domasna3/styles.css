@@ -1,0 +1,87 @@
+input {
+    width: 40px; 
+    height: 40px; 
+    border: solid 1px chocolate;
+    border-radius: 3px;
+    background-color: rgb(239, 212, 192);
+    margin-right: 10px;
+    text-align: center; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#inputContainer {
+    display: flex;
+}
+
+#oneRow {
+    display: flex;
+    align-items: center;
+}
+
+#gameElements{
+    display: none;
+}
+
+#Start {
+    width: 70px; 
+    height: 44px; 
+    border: solid 1px gray;
+    border-radius: 3px;
+    background-color: lightgray;
+    margin-right: 10px;
+    text-align: center; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+}
+
+#restart {
+    display: none;
+    width: 70px; 
+    height: 44px; 
+    border: solid 1px gray;
+    border-radius: 3px;
+    background-color: lightgray;
+    margin-right: 10px;
+    text-align: center; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+}
+
+#checkButton {
+    width: 70px; 
+    height: 44px; 
+    border: solid 1px chocolate;
+    border-radius: 3px;
+    background-color: rgb(239, 212, 192);
+    margin-right: 10px;
+    text-align: center; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+table {
+    height: 44px; 
+    border: solid 1px chocolate;
+    background-color: rgb(239, 212, 192);
+    margin-right: 10px;
+    text-align: center; 
+    align-items: center; 
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[disabled] {
+    background-color: gray;
+    color: black;
+}
