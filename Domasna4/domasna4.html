@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInputfirst").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").each(function() {
+      var firstName = $(this).find('.name').text().toLowerCase();
+      if (firstName.indexOf(value) > -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#myInputsecond").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").each(function() {
+      var firstName = $(this).find('.lastname').text().toLowerCase();
+      if (firstName.indexOf(value) > -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#myInputemail").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").each(function() {
+      var firstName = $(this).find('.email').text().toLowerCase();
+      if (firstName.indexOf(value) > -1) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
+});
+
+$(document).ready(function(){
+$("#myTable").on('mouseenter', 'td', function() {
+    $(this).css('background-color', 'yellow');
+    }).on('mouseleave', 'td', function() {
+      $(this).css('background-color', '');
+    });
+});
+
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Filterable Table</h2>
+<p>Type something in the input field to search the table for first names, last names or emails:</p>  
+<input id="myInputfirst" type="text" placeholder="Search by firstname..">
+<input id="myInputsecond" type="text" placeholder="Search by lastname..">
+<input id="myInputemail" type="text" placeholder="Search by email..">
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td class="name">John</td>
+    <td class="lastname">Doe</td>
+    <td class="email">john@example.com</td>
+  </tr>
+  <tr>
+    <td class="name">Mary</td>
+    <td class="lastname">Moe</td>
+    <td class="email">mary@mail.com</td>
+  </tr>
+  <tr>
+    <td class="name">July</td>
+    <td class="lastname">Dooley</td>
+    <td class="email">july@greatstuff.com</td>
+  </tr>
+  <tr>
+    <td class="name">Anja</td>
+    <td class="lastname">Ravendale</td>
+    <td class="email">a_r@test.com</td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
