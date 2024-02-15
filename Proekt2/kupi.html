@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТК Прилеп</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        #responseMessage {
+            color: red; 
+            font-size: 14px; 
+        }
+
+        input[type="submit"] {
+            background-color: #fff; 
+            color: #333; 
+            border: 1px solid #333; 
+            padding: 8px 16px; 
+            cursor: pointer; 
+            transition: background-color 0.3s, box-shadow 0.3s; 
+        }
+
+        
+        input[type="submit"]:hover {
+            background-color: #ddd; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+            color: #333; 
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    
+
+    <section id="header">
+        <a href="#"><img src="Img/logo png.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Дома</a></li>
+                <li><a href="prodavnica.html">Продавница</a></li>
+                <li><a href="kontakt.html">Контакт</a></li>
+                <li><a class="active"  href="kupi.html">Купи</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>Нарачка?</h2>
+        <h5>Пополнете ги податоците наведени подолу</h5>
+    </section>
+
+    <section id="form-details">
+        <form id="purchaseForm">
+            <label for="firstName">Име:</label>
+            <input type="text" id="firstName" name="firstName"><br>
+    
+            <label for="lastName">Презиме:</label>
+            <input type="text" id="lastName" name="lastName"><br>
+    
+            <label for="email">Е-пошта:</label>
+            <input type="email" id="email" name="email"><br>
+    
+            <label for="address">Домашна адреса:</label>
+            <input type="text" id="address" name="address"><br>
+    
+            <label for="product">Продукт за купување:</label>
+            <input type="text" id="product" name="product"><br>
+    
+            <input type="submit" value="Купи">
+        </form>
+    
+        <div id="responseMessage"></div>
+        
+    </section>
+
+    <script>
+        $(document).ready(function() {
+            $("#purchaseForm").submit(function(event) {
+                event.preventDefault(); 
+    
+                
+                var firstName = $("#firstName").val();
+                var lastName = $("#lastName").val();
+                var email = $("#email").val();
+                var address = $("#address").val();
+                var product = $("#product").val();
+    
+                if (firstName && lastName && email && address && product) {
+                    
+                    $("#responseMessage").text("Успешно направена нарачка!");
+                } else {
+                    $("#responseMessage").text("Грешка: Ве молиме пополнете ги сите полиња.");
+                }
+            });
+        });
+    </script>
+    
+    
+  
+    <section id="newsletters" class="section-p1 section-m1">
+        <div classes="mewstext">
+            <h4>Најави се за новости</h4>
+            <p>За најнови производи и специјални понуди внесете ја вашата електронска адреса </p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="email adress">
+            <button>Sign Up</button>
+        </div>
+
+    </section>
+
+    <section id="footer" class="section-p1">
+        <div class="col">
+            <img src="Img/logo png.png" alt="logo" class="logo">
+            <h4>Контакт</h4>
+            <p><strong>Телефон:</strong> 07X XXX XXX</p>
+            <p><strong>Раборно време:</strong> 24/7</p>
+            <p><a href="
