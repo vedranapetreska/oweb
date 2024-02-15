@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТК Прилеп</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Load navi.html into the #navigation div when the page loads
+            $('#navigation').load('navi.html');
+            
+            // Handle image click event
+            $('img').click(function() {
+                // Redirect to kupi.html
+                window.location.href = 'kupi.html';
+            });
+        });
+    </script>
+
+    <section id="header">
+        <a href="#"><img src="Img/logo png.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="proekt1.html">Дома</a></li>
+                <li><a class="active" href="prodavnica.html">Продавница</a></li>
+                <li><a href="kontakt.html">Контакт</a></li>
+                <li><a href="kupi.html">Купи</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header">
+        <h2>Шопинг од дома</h2>
+        <h5>Собирај купони и добиј до 70% попуст</h5>
+    </section>
+
+
+    <section id="products" class="section-p1">
+        <div class="pro-container">
+
+            <div class="pro">
+                <img src="Img/products/wilson_racket3.webp" alt="wilson racket">
+                <div class="des">
+                    <span>wilson</span>
+                    <h5>Wilson Impact тенис рекет</h5>
+                    <h4>9000 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/head_racket1.jpg" alt="wilson racket">
+                <div class="des">
+                    <span>head</span>
+                    <h5>HEAD racket</h5>
+                    <h4>9800 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/babolat_aero_g.jpg" alt="wilson racket">
+                <div class="des">
+                    <span>Babolat</span>
+                    <h5>Babolat aero</h5>
+                    <h4>10000 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/wilson_bag1.webp" alt="wilson bag">
+                <div class="des">
+                    <span>wilson</span>
+                    <h5>Wilson торба</h5>
+                    <h4>4900 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/head_bag1.webp" alt="head bag">
+                <div class="des">
+                    <span>head</span>
+                    <h5>Head торба</h5>
+                    <h4>4500 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/babolat_bag.jpg" alt="babolat bag">
+                <div class="des">
+                    <span>Babolat</span>
+                    <h5>Babolat торба</h5>
+                    <h4>4500 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/head_shorts.jpg" alt="head shorts">
+                <div class="des">
+                    <span>Head</span>
+                    <h5>HEAD машки шорцеви</h5>
+                    <h4>3800 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/head_grils_tennis_skirt.jpg" alt="head skirt">
+                <div class="des">
+                    <span>head</span>
+                    <h5>HEAD женска сукња</h5>
+                    <h4>3000 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+            <div class="pro">
+                <img src="Img/products/head_womens_club_22_tennisdress.webp" alt="head dress">
+                <div class="des">
+                    <span>head</span>
+                    <h5>HEAD фустан за тенис</h5>
+                    <h4>3000 денари</h4>
+                </div>
+
+                <button class="like-btn" onclick="toggleLike(this)">Like</button>
+                <p class="like-count">0</p>
+
+                <div class="comments">
+                    <h5>Коментари</h5>
+                    <ul class="comment-list"></ul>
+                    <input type="text" placeholder="Напишете коментар" class="comment-input">
+                    <button onclick="addComment(this)">Коментирај</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="newsletters" class="section-p1 section-m1">
+        <div classes="mewstext">
+            <h4>Најави се за новости</h4>
+            <p>За најнови производи и специјални понуди внесете ја вашата електронска адреса </p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="email adress">
+            <button>Sign Up</button>
+        </div>
+
+    </section>
+
+    <section id="footer" class="section-p1">
+        <div class="col">
+            <img src="Img/logo png.png" alt="logo" class="logo">
+            <h4>Контакт</h4>
+            <p><strong>Телефон:</strong> 07X XXX XXX</p>
+            <p><strong>Раборно време:</strong> 24/7</p>
+            <p><a href="mailto:kti1572021@feit.ukim.edu.mk "><strong>Испрати маил</strong></a></p>
+        </div>
+
+        <div class="col">
+            <h4>Кориснички профил</h4>
+            <a href="#">Најава</a>
+            <a href="#">Картчка</a>
+            <a href="#">Кошничка</a>
+            <a href="#">Помош</a>
+        </div>
+
+        <div class="col">
+                <h4>Повеќе за</h4>
+                <a href="#">За нас</a>
+                <a href="#">Информации за услугата</a>
+                <a href="#">Услови за користење</a>
+                <a href="#">Политика на приватност</a>
+        </div>
+
+    </section>
+
+</body>
+</html>
